@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../font/Proxima/Semibold/ProximaNovaSemibold.eot');
+    src: url('../font/Proxima/Semibold/ProximaNovaSemibold.eot') format('embedded-opentype'),
+    url('../font/Proxima/Semibold/ProximaNovaSemibold.woff2') format('woff2'),
+    url('../font/Proxima/Semibold/ProximaNovaSemibold.woff') format('woff'),
+    url('../font/Proxima/Semibold/ProximaNovaSemibold.ttf') format('truetype'),
+    url('../font/Proxima/Semibold/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+}
+.nav--contacts--icon {
+    font-family: "ProximaNovaSemibold", san-serif;
+}

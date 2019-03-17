@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Окнотэк - производство пластиковых окон, дверей и других светопрозрачных конструкций</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <!—-Yandex.Metrika counter —>
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(52794667, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/52794667" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!— /Yandex.Metrika counter —>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+
+
+    <script src="js/device.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.viewportchecker.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<svg width="0" height="0">
+    <defs>
+        <svg id="icon_phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>phone</title><path d="M41,50H41c-8.54-.28-18.57-8.58-25.49-15.5S0.27,17.55,0,9C-0.09,6.16,7.21.83,7.28,0.78c1.84-1.28,3.87-.84,4.7.31,0.58,0.8,6.16,9.26,6.77,10.23a3.89,3.89,0,0,1-.25,3.82c-0.44.84-1.93,3.46-2.59,4.61a59,59,0,0,0,6.69,7.64,59.39,59.39,0,0,0,7.64,6.7c1.14-.65,3.77-2.15,4.61-2.59a3.92,3.92,0,0,1,3.8-.26c1,0.62,9.44,6.22,10.23,6.77A2.76,2.76,0,0,1,50,40.06a4.06,4.06,0,0,1-.77,2.66C49.16,42.79,43.9,50,41,50ZM9.62,2a2.09,2.09,0,0,0-1.19.42C6,4.11,2,7.9,2,8.95c0.25,7.88,8.25,17.47,14.91,24.14S33.16,47.74,41,48h0c1.08,0,4.87-4,6.56-6.43A2.06,2.06,0,0,0,48,40.23a0.84,0.84,0,0,0-.25-0.59c-0.66-.46-9.13-6.1-10.12-6.7a2.27,2.27,0,0,0-1.83.32c-1,.54-5,2.84-5.08,2.86l-0.5.29-0.5-.29c-0.12-.07-3-1.77-8.51-7.32S14,20.4,13.88,20.28l-0.29-.5,0.29-.5s2.31-4,2.86-5.08a2.21,2.21,0,0,0,.34-1.82C16.49,11.47,10.9,3,10.37,2.26A1,1,0,0,0,9.62,2Z" transform="translate(0 0)"/></svg>
+        <svg id="icon_location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.7 512"><defs></defs><title>location</title><path class="a" d="M256.1,512a23.42,23.42,0,0,1-19.2-10L106.3,314.4A190.14,190.14,0,0,1,62.6,192.6C62.6,86.4,149.4,0,256,0S449.3,86.4,449.3,192.6A192.82,192.82,0,0,1,425,286.1a25.49,25.49,0,0,1-2.3,4.3,218.42,218.42,0,0,1-15.3,21.9l-132,189.6A23.57,23.57,0,0,1,256.1,512ZM256,21.1C161,21.1,83.7,98,83.7,192.6a169.62,169.62,0,0,0,39,108.6c0.2,0.2.4,0.5,0.6,0.7l130.9,188a2.42,2.42,0,0,0,1.9,1,2.61,2.61,0,0,0,2-1l132.3-190c0.1-.2.3-0.4,0.4-0.6A202.84,202.84,0,0,0,405,279a2.19,2.19,0,0,1,.3-0.5c0.1-.1.1-0.2,0.2-0.3a14.17,14.17,0,0,1,.8-1.8,171.08,171.08,0,0,0,22-83.8C428.3,98,351,21.1,256,21.1Z" transform="translate(-62.6 0)"/><path class="a" d="M252.8,300.6c-59.8,0-108.4-48.5-108.4-108s48.6-108,108.4-108,108.4,48.5,108.4,108S312.6,300.6,252.8,300.6Zm0-194.9c-48.2,0-87.3,39-87.3,86.9s39.2,86.9,87.3,86.9,87.3-39,87.3-86.9S301,105.7,252.8,105.7Z" transform="translate(-62.6 0)"/></svg>
+        <svg id="icon_email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 56.84"><title>email</title><path d="M58.44,15.42L55,2.64,54.73,1.58,32.94,7.42H3v8H0v43H60v-43H58.44Zm-54.22,2H56.37l-19.79,20,0,0L31.18,43a1.73,1.73,0,0,1-2.33,0l-5.47-5.5,0,0-19.78-20H4.21Zm38.36-3.26,5.8-1.55,0.75,2.82H42.91Zm-22,23.3L2,55.27V18.84Zm1.41,1.42,5.52,5.55a3.7,3.7,0,0,0,2.53,1,3.78,3.78,0,0,0,2.58-1l5.5-5.52L56.31,56.42H3.69Zm17.54-1.42L58,18.84V55.27Zm16.89-22H51.19l-1.41-5.27-9.66,2.59,0.72,2.68h-30L53.32,4Zm-30.89-6-1.13.3L5,14.9V9.42H25.48Z" transform="translate(0 -1.58)"/></svg>
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.11 201.77"><defs></defs><title>oknotek</title><path class="a" d="M1395.36,1711a51.16,51.16,0,1,1,51.16-51.16A51.22,51.22,0,0,1,1395.36,1711Zm0-80.26a29.1,29.1,0,1,0,29.1,29.1A29.13,29.13,0,0,0,1395.36,1630.78Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1078.3,1711a51.16,51.16,0,1,1,51.16-51.16A51.22,51.22,0,0,1,1078.3,1711Zm0-80.26a29.1,29.1,0,1,0,29.1,29.1A29.13,29.13,0,0,0,1078.3,1630.78Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1211.77,1706.63a5.45,5.45,0,0,1-4.4-2.24l-26.2-36.08h-13.62v32.89a5.44,5.44,0,0,1-5.43,5.43H1148a5.44,5.44,0,0,1-5.43-5.43v-82.86a5.44,5.44,0,0,1,5.43-5.43h14.08a5.44,5.44,0,0,1,5.43,5.43V1649h14.05l23-33.73a5.43,5.43,0,0,1,4.49-2.37h14.42a5.43,5.43,0,0,1,4.46,8.54l-26.28,37.75,28.57,38.79a5.43,5.43,0,0,1-4.37,8.66h-14.11Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1313.6,1706.63a5.44,5.44,0,0,1-5.43-5.43v-31.28H1268v31.28a5.44,5.44,0,0,1-5.43,5.43h-14.09a5.44,5.44,0,0,1-5.43-5.43v-82.86a5.44,5.44,0,0,1,5.43-5.43h14.09a5.44,5.44,0,0,1,5.43,5.43v31.28h40.16v-31.28a5.44,5.44,0,0,1,5.43-5.43h14.09a5.44,5.44,0,0,1,5.43,5.43v82.86a5.44,5.44,0,0,1-5.43,5.43H1313.6Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1481.54,1706.63a5.44,5.44,0,0,1-5.43-5.43v-67.78h-25.43a5.44,5.44,0,0,1-5.43-5.43v-9.65a5.44,5.44,0,0,1,5.43-5.43h75.6a5.44,5.44,0,0,1,5.43,5.43V1628a5.44,5.44,0,0,1-5.43,5.43h-25.43v67.78a5.44,5.44,0,0,1-5.43,5.43h-13.88Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1575.24,1709c-12.71,0-21.09-1.7-30.92-6.27a5.43,5.43,0,0,1-3.14-4.9v-7.35a5.37,5.37,0,0,1,7.27-5,60.75,60.75,0,0,0,20.8,3.82c18.1,0,29-6.51,31.49-18.82l0.37-1.83h-36.35a5.39,5.39,0,0,1-5.39-5.39v-7a5.39,5.39,0,0,1,5.39-5.39h36.43l-0.47-1.89c-2.93-11.92-14.55-18.76-31.88-18.76a55.72,55.72,0,0,0-19.36,3.7,5.37,5.37,0,0,1-5.68-1.17,5.33,5.33,0,0,1-1.62-3.85v-7.45a5.39,5.39,0,0,1,2.93-4.8,60.07,60.07,0,0,1,27.13-6.17c24.57,0,53.26,13.37,53.26,51.06,0,15.3-5.64,27.87-16.32,36.35C1600.28,1705,1587.91,1709,1575.24,1709Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1708.24,1706.63a5.45,5.45,0,0,1-4.4-2.24l-26.21-36.08H1664v32.89a5.43,5.43,0,0,1-5.43,5.43H1644.3a5.24,5.24,0,0,1-5.24-5.24v-84.22a4.27,4.27,0,0,1,4.27-4.27h15.25a5.43,5.43,0,0,1,5.43,5.43V1649h14.05l23-33.73a5.43,5.43,0,0,1,4.49-2.37h14.2a5.66,5.66,0,0,1,4.63,2.25,5.42,5.42,0,0,1,.05,6.29l-26.28,37.75,28.57,38.79a5.42,5.42,0,0,1,.09,6.32,5.63,5.63,0,0,1-4.67,2.34h-13.9Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1087.54,1724.45a7.23,7.23,0,0,0-6.11,7.18v44a4.88,4.88,0,0,1-4.88,4.88H964.89a7.27,7.27,0,0,1-7.27-7.27V1661.61a4.88,4.88,0,0,1,4.88-4.88h43.67a7.23,7.23,0,0,0,7.18-6.15,64.7,64.7,0,0,1,3.59-13.9,7.27,7.27,0,0,0-6.78-9.89H953.6a25.93,25.93,0,0,0-25.93,25.93v131.84a25.93,25.93,0,0,0,25.93,25.93h131.84a25.93,25.93,0,0,0,25.93-25.93v-57a7.28,7.28,0,0,0-9.93-6.76A64.76,64.76,0,0,1,1087.54,1724.45Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1055.55,1723H953.2v-8.73h87.07a6.64,6.64,0,0,1,3.52,1,64.75,64.75,0,0,0,12.06,5.91A0.92,0.92,0,0,1,1055.55,1723Z" transform="translate(-927.68 -1608.71)"/><path class="a" d="M1023.9,1697.87V1785h-8.73V1682.59a0.92,0.92,0,0,1,1.79-.31,64.93,64.93,0,0,0,5.91,12.08A6.64,6.64,0,0,1,1023.9,1697.87Z" transform="translate(-927.68 -1608.71)"/></svg>
+        <svg id="icon_positive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.91 36.55"><title>done</title><path d="M15.22,34.32L3.86,23,0,26.82,15.22,42,47.91,9.34,44.06,5.48Z" transform="translate(0 -5.48)"/></svg>
+    </defs>
+</svg>
+
+    <nav>
+        <div class="container">
+        <div class="nav-header">
+            <div class="nav--logo">
+                <img src="img/logo.jpg" alt="">
+            </div>
+
+            <!--<img class="nav&#45;&#45;logo" src="" alt="">-->
+
+            <!--<svg class="nav&#45;&#45;logo">-->
+            <!--<use xlink:href="#logo" />-->
+            <!--</svg>-->
+
+            <ul class="nav--contacts">
+                <li class="nav--contacts--location">
+                    <a href="#contacts">
+                    <svg class="nav--contacts--icon">
+                        <use xlink:href="#icon_location" />
+                    </svg>
+                        Люберцы, Красная улица, 1лит2Ж, офис 212
+                    </a>
+                </li>
+                <li class="nav--contacts--email">
+                    <svg class="nav--contacts--icon">
+                        <use xlink:href="#icon_email" />
+                    </svg>
+                    <a href="mailto:privet@oknotek.net">privet@oknotek.net</a>
+                    <!--<a href="mailto:iazyryanov@yandex.ru">iazyryanov@yandex.ru</a>-->
+                </li>
+                <li  class="nav--contacts--phone">
+                    <svg class="nav--contacts--icon">
+                        <use xlink:href="#icon_phone" />
+                    </svg>
+                    <a href="tel:+7 (499) 322-02-65">+7 (499) 322-02-65</a>
+                </li>
+            </ul>
+            <div type="button" class="nav--contacts--callback" data-toggle="modal" data-target="#callback">
+                Заказать звонок
+            </div>
+        </div>
+
+        </div>
+        <div class="nav--bar">
+            <div class="menu-and-callback visible-xs visible-sm">
+              <img id="menu-button" src="img/menu.png" alt="menu icon" role="button">
+              <div type="button" class="menu--callback" data-toggle="modal" data-target="#callback">
+                  Заказать звонок
+              </div>
+            </div>
+            <div class="container">
+                <ul>
+                   <li><a href="#products">Продукция</a></li>
+                   <li><a href="#use">Применение</a></li>
+                   <li><a href="#metering">Бесплатный замер</a></li>
+                   <li><a href="#aboutUs">О нас</a></li>
+                   <li><a href="#FAQ">Часто задавамые вопросы</a></li>
+                   <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--descriptor-->
+    <section class="descriptor">
+        <div class="container">
+            <div class="col-md-5">
+                <img src="img/window.jpg" alt="Окно" class="descriptor--window">
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <h1>
+                    Производим пластиковые&nbsp;окна, двери и&nbsp;другие светопрозрачные конструкции
+                </h1>
+                <h3>
+                    Доставка по Москве и Московской области
+                </h3>
+                <ul class="descriptor--positive">
+                    <li>Бесплатный замер</li>
+                    <li>Изготовление от&nbsp;3-х дней</li>
+                    <li>Монтаж, демонтаж</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--our products-->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Мы производим</h2>
+                <div class=" col-md-4 col-sm-6 product">
+                    <img src="img/products/window.jpg" alt="" />
+                    <div class="title">
+                        Окна
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product">
+                    <img src="img/products/door.jpg" alt="" />
+                    <div class="title">
+                        Двери
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product">
+                    <img src="img/products/glazing.jpg" alt="" />
+                    <div class="title">
+                        Остекление балконов и&nbsp;лоджий
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product">
+                    <img src="img/products/garden.jpg" alt="" />
+                    <div class="title">
+                        Зимние сады
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product">
+                    <img src="img/products/facade.jpg" alt="" />
+                    <div class="title">
+                        Фасады
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product">
+                    <img src="img/products/office.jpg" alt="" />
+                    <div class="title">
+                        Офисные перегородки
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--applying our products-->
+    <section class="use" id="use">
+        <div class="container">
+            <h2>
+                Наша продукция применяется
+            </h2>
+            <div class="text-center">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist" id="myTab">
+                    <li role="presentation" class="active"><a href="#placeFlat" aria-controls="flat" role="tab" data-toggle="tab">В квартирах</a></li>
+                    <li role="presentation"><a href="#placeHouse" aria-controls="home" role="tab" data-toggle="tab">Коттеджах</a></li>
+                    <!--<li role="presentation"><a href="#placeOffice" aria-controls="profile" role="tab" data-toggle="tab">Офисы</a></li>-->
+                    <li role="presentation"><a href="#placeCommercial" aria-controls="messages" role="tab" data-toggle="tab">Торговых помещениях</a></li>
+                    <li role="presentation"><a href="#placeProduction" aria-controls="settings" role="tab" data-toggle="tab">Производственных помещениях</a></li>
+                </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="placeFlat">
+                    <div id="placeFlatCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <div class="col-md-offset-1 col-md-10 ">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/places/flat/1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Балконный блок, профильная система KBE, Москва
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/flat/2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно, профильная система KBE, Москва
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/flat/3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Балконный блок, профильная система KBE, Москва
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/flat/4.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно, профильная система KBE, Москва
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/flat/5.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/flat/6.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Остекление балконов, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Indicators -->
+                            <a class="left carousel-control" href="#placeFlatCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущее фото</span>
+                            </a>
+                            <a class="right carousel-control" href="#placeFlatCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Следующее фото</span>
+                            </a>
+                            <ol class="carousel-indicators">
+                                <li data-target="#placeFlatCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#placeFlatCarousel" data-slide-to="1"></li>
+                                <li data-target="#placeFlatCarousel" data-slide-to="2"></li>
+                                <li data-target="#placeFlatCarousel" data-slide-to="3"></li>
+                                <li data-target="#placeFlatCarousel" data-slide-to="4"></li>
+                                <li data-target="#placeFlatCarousel" data-slide-to="5"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="placeHouse">
+                    <div id="plaecHouseCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <div class="col-md-offset-1 col-md-10 ">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/places/house/1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                      Окно с золотой раскладкой внутри стеклопакета, цвет - махагон, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно с золотой раскладкой внутри стеклопакета, цвет - махагон, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/4.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/5.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/6.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно нестандартной формы с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/7.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно нестандартной формы с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/8.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окно нестандартной формы с золотой раскладкой внутри стеклопакета, цвет - золотой дуб, профильная система KBE, Кратово
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/house/9.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Indicators -->
+                            <a class="left carousel-control" href="#plaecHouseCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущее фото</span>
+                            </a>
+                            <a class="right carousel-control" href="#plaecHouseCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Следующее фото</span>
+                            </a>
+                            <ol class="carousel-indicators">
+                                <li data-target="#plaecHouseCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="1"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="2"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="3"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="4"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="5"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="6"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="7"></li>
+                                <li data-target="#plaecHouseCarousel" data-slide-to="8"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="placeCommercial">
+                    <div id="placeCommercialCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <div class="col-md-offset-1 col-md-10 ">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/places/commercial/1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Алюминиевый фасад, профильная система AGS, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Структурное остекление, Марусино
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Алюминиевый фасад, профильная система AGS, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/4.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна и входные группы, цвет - RAL 7044, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/5.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна и входные группы, цвет - RAL 7044, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/6.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна и входные группы, цвет - RAL 7044, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/7.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Входная группа, цвет - серый, профильная система NewTec, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/8.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Дверь, цвет - бежевый, Люберцы
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/places/commercial/9.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Входная дверь, цвет - серый, профильная система NewTec, Люберцы
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Indicators -->
+                            <a class="left carousel-control" href="#placeCommercialCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущее фото</span>
+                            </a>
+                            <a class="right carousel-control" href="#placeCommercialCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Следующее фото</span>
+                            </a>
+                            <ol class="carousel-indicators">
+                                <li data-target="#placeCommercialCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="1"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="2"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="3"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="4"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="5"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="6"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="7"></li>
+                                <li data-target="#placeCommercialCarousel" data-slide-to="8"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="placeProduction">
+                    <div id="placeProductionCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <div class="col-md-offset-1 col-md-10 ">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/places/production/1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                        Окна, профильная система Bauline, Люберцы
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Indicators -->
+                            <a class="left carousel-control" href="#placeProductionCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущее фото</span>
+                            </a>
+                            <a class="right carousel-control" href="#placeProductionCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Следующее фото</span>
+                            </a>
+                            <ol class="carousel-indicators">
+                                <li data-target="#placeProductionCarousel" data-slide-to="0" class="active"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--free metering-->
+    <section class="metering" id="metering">
+        <div class="container">
+            <div class="col-md-4 col-md-offset-1">
+                <img src="img/metering.png" alt="Замер" class="man visible-md visible-lg">
+            </div>
+            <div class="col-md-6 col-md-offset-1 metering_descriptor">
+                <h2>
+                    Бесплатный&nbsp;замер
+                </h2>
+                <!--<form action="javascript:void(null);">-->
+                <form class="meteringForm" action="">
+                    <input type="hidden" name="type" value="metering">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required />
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required />
+                    <button type="submit">Отправить заявку</button>
+                    <span class="privacy">Мы не передаем данные третьим лицам</span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--our statistic-->
+    <section class="statistic" id="aboutUs">
+        <div class="container">
+            <h2>
+                О&nbsp;нас в&nbsp;цифрах и&nbsp;фактах
+            </h2>
+            <div class="row">
+              <div class="col-md-offset-1 col-md-2">
+                    <div class="stat">
+                        <div class="stat_title">8 лет</div>
+                        <div class="stat_desc">на рынке</div>
+                    </div>
+              </div>
+              <div class="col-md-2">
+                    <div class="stat">
+                        <div class="stat_title">От 3-х дней</div>
+                        <div class="stat_desc">время изготовления заказа</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="stat">
+                        <div class="stat_title">100 дилеров</div>
+                        <div class="stat_desc">работают с&nbsp;нами</div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="stat">
+                        <div class="stat_title">2500 м<sup><small>2</small></sup></div>
+                        <div class="stat_desc">площадь производства</div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="stat">
+                        <div class="stat_title">10&nbsp;000&nbsp;м<sup><small>2</small></sup></div>
+                        <div class="stat_desc">продукции выпускаем ежемесячно</div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!--our manufacture-->
+    <section class="production">
+    <div class="container">
+        <h2>
+            Наше производство
+        </h2>
+        <div class="col-md-offset-1 col-md-10 ">
+            <div id="productionCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/production/1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/production/2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/production/3.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/production/4.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/production/5.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/production/6.jpg" alt="...">
+                    </div>
+                </div>
+                <!-- Indicators -->
+                <a class="left carousel-control" href="#productionCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущее фото</span>
+                </a>
+                <a class="right carousel-control" href="#productionCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Слелдующее фото</span>
+                </a>
+                <ol class="carousel-indicators">
+                    <li data-target="#productionCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#productionCarousel" data-slide-to="1"></li>
+                    <li data-target="#productionCarousel" data-slide-to="2"></li>
+                    <li data-target="#productionCarousel" data-slide-to="4"></li>
+                    <li data-target="#productionCarousel" data-slide-to="5"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--faq-->
+    <section class="faq"  id="FAQ">
+        <div class="container">
+            <!--<h2>-->
+                <!--Ответы на вопросы <br/> возникающие при&nbsp;выборе пластиковых&nbsp;окон-->
+            <!--</h2>-->
+                <div class="questions">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-5">
+                            <div class="question">
+                                <div class="title">Теплозащита</div>
+                                <div class="content">По тепловым характеристикам наши окна могут равняться кирпичной стене толщиной 1,3 м. По сравнению с деревянными окнами, установленными в панельные дома 80-х годов постройки, наши окна снижают потери энергии на 76%.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="question">
+                                <div class="title">Шумоизоляция</div>
+                                <div class="content">Наши окна могут достигать уровня звукоизоляции в 40 дБ, что создает комфортные условия для полноценного отдыха и здорового сна вблизи 6-полосной автострады.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-5">
+                            <div class="question">
+                                <div class="title">Сквозняки</div>
+                                <div class="content">Используемые уплотнители пропускают в 5 раз меньше воздуха в помещение, чем допускается для уплотнителей класса А по ГОСТу, что обеспечивает полное отсутствие сквозняков.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="question">
+                                <div class="title">Безопасность</div>
+                                <div class="content">Фурнитура Roto NT, уже в стандартном варианте оснащена противовзломной грибовидной цапфой, которая обеспечивает высокий уровень безопасности и дает надежную защиту от взлома, а также предусматривает установление дополнительных противовзломных элементов, в том числе электронных.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-5">
+                            <div class="question">
+                                <div class="title">Ударостойкость</div>
+                                <div class="content">Наши стеклопакеты могут выдерживать прямые удары топором или выстрелы из автомата Калашникова.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="question">
+                                <div class="title">Срок службы</div>
+                                <div class="content">В зависимости от выбранной профильной системы срок службы наших окон составляет от 40 до 60 лет.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-5">
+                            <div class="question">
+                                <div class="title">Безопасность для детей</div>
+                                <div class="content">Для использования в детских комнатах и общественных зданиях (особенно в детских садах и школах) мы используем оконную фурнитуру с технологией TiltFirst  – продуманным механизмом безопасности для детей.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="question">
+                                <div class="title">Экологичность</div>
+                                <div class="content">Мы используем профильные системы, которые по составу приближены к пищевому пластику. Благодаря полному отсутствию свинца и использованию экологически чистой рецептуры на основе кальциево-цинковых стабилизаторов, полностью безопасных для окружающей среды и человека. Эта рецептура также обеспечивает устойчивый белый цвет профиля.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--credit-->
+    <!--<section class="credit invisible" id="credit">-->
+            <!--<img src="img/money.png" alt="Замер" class="money">-->
+        <!--<div class="container">-->
+            <!--<div class="col-md-offset-6 col-md-6 credit_descriptor">-->
+                <!--<h2>-->
+                    <!--Не хватает денег на&nbsp;покупку?-->
+                <!--</h2>-->
+                <!--<h3>-->
+                    <!--Мы предоставляем отсрочку платежа-->
+                <!--</h3>-->
+                <!--<form action="javascript:void(null);">-->
+                    <!--<input type="hidden" name="type" value="credit">-->
+                    <!--<label for="credit&#45;&#45;name">Введите имя</label>-->
+                    <!--<input type="text" id="credit&#45;&#45;name" name="name" placeholder="Ваше имя" required />-->
+                    <!--<label for="credit&#45;&#45;phone">Введите телефон</label>-->
+                    <!--<input type="tel" id="credit&#45;&#45;phone" name="phone" placeholder="Ваш телефон" required />-->
+                    <!--<button>Узнать подробнее</button>-->
+                <!--</form>-->
+                <!--<span class="privacy">Мы не передаем данные третьим лицам</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+
+    <!--free metering and ask a question-->
+    <section class="prefooter">
+        <div class="container text-center">
+            <h2>Закажите бесплатный&nbsp;замер</h2>
+            <a href="#metering" class="button">Заказать замер</a>
+
+            <h2>Остались вопросы?</h2>
+            <a class="button" href="#" data-toggle="modal" data-target="#question">Задать вопрос</a>
+        </div>
+    </section>
+
+    <!--our contacts-->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>
+                Наши контакты
+            </h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8df1f6846ab99720c6e17310a0a47f484c424f46174f65c82657ae8b176a100b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+            <!--<div id="map" style="width: 100%; height: 600px"> </div>-->
+            <div class="text">
+
+                <div class="attr">
+                    <div class="title">Адрес</div>
+                    <div class="desc">Люберцы, Красная улица, 1лит2Ж, офис 212</div>
+                </div>
+
+                <div class="attr">
+                <div class="title">E-Mail</div>
+                <div class="desc"><a href="mailto:privet@oknotek.net">privet@oknotek.net</a></div>
+                </div>
+
+                <div class="attr">
+                <div class="title">Телефон</div>
+                <div class="desc"><a href="tel:+7 (499) 322-02-65">+7 (499) 322-02-65</a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--our partners-->
+    <section class="partners">
+        <div class="container">
+            <h2>
+                Наши партнеры
+            </h2>
+            <ul class="logos">
+                <li><img src="img/partners/kbe.png" alt=""></li>
+                <li><img src="img/partners/rehau.png" alt=""></li>
+                <li><img src="img/partners/bauline.png" alt=""></li>
+                <li><img src="img/partners/agrisovgaz.png" alt=""></li>
+                <li><img src="img/partners/roto.png" alt=""></li>
+                <li><img src="img/partners/tbm.png" alt=""></li>
+                <!--<li><img src="img/partners/denver.png" alt=""></li>-->
+            </ul>
+        </div>
+    </section>
+
+
+<!-- callback modal -->
+<div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form class="callbackForm" action="">
+                    <input type="hidden" name="type" value="callback">
+                    <label for="callback--name">Имя</label>
+                    <input type="text" id="callback--name" name="name" placeholder="Ваше имя" required>
+                    <label for="callback--phone">Телефон</label>
+                    <input type="tel" id="callback--phone" name="phone" placeholder="Ваш телефон" required>
+                    <button type="submit" class="send">Позвоните мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--success callback modal-->
+<div class="alert alert-success" role="alert" id="successRequest">Заявка отправлена!<br>Мы&nbsp;позвоним&nbsp;Вам в ближайшее время.</div>
+
+
+<!-- ask a question modal -->
+<div class="modal fade" id="question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form class="questionForm" action="">
+                    <input type="hidden" name="type" value="question">
+                    <label for="question--name">Имя</label>
+                    <input type="text" id="question--name" name="name" placeholder="Ваше имя" required>
+                    <label for="question--email">Электронная почта</label>
+                    <input type="email" id="question--email" name="email" placeholder="Ваш e-mail" required>
+                    <label for="question--text">Вопрос</label>
+                    <textarea name="text" id="question--text" rows="3" placeholder="Ваш вопрос" required></textarea>
+                    <button type="submit" class="send">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
