@@ -3,8 +3,10 @@
 
 $(document).ready(function () {
 
-        $('#menu-button').click(function () {
+        $('#menu-button, #menu-close-button').click(function () {
           $('.nav--bar .container').slideToggle();
+          $('#menu-button').toggle();
+          $('#menu-close-button').toggle();
         })
 
         $('.meteringForm').submit(function (e) {

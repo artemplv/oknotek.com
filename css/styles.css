@@ -136,6 +136,15 @@ h2 {
   width: 40px;
   margin-top: 5px;
   margin-left: 5%;
+  margin-bottom: 5px;
+}
+
+#menu-close-button {
+  display: none;
+  width: 30px;
+  margin-top: 5px;
+  margin-left: 5%;
+  margin-bottom: 5px;
 }
 
 .nav--bar .container {
